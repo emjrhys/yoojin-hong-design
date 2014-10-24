@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container-border {
+	position: fixed;
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+
+.container {	
+	background: white;
+	position: fixed;
+	height: calc(100% - 60px);
+	width: calc(100% - 60px);
+	top: 30px;
+	left: 30px;
+}
+
+.content {
+	text-align: center;
+	position: absolute;
+	left: 0; right: 0;
+	margin: auto;
+	height: 2000px;
+}
+
+.title {
+	background: url(../assets/title.png) no-repeat center center fixed;
+	height: 1000px;
+}
+
+.profile {
+	background: url(../assets/title.png) no-repeat center center fixed;
+	background-color: #fff;
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
