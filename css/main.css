@@ -2,10 +2,15 @@
   padding: 0;
   margin: 0; }
 
+body {
+  font-family: 'AvenirLTStdRegular'; }
+
 #splash-video {
   height: 100%; }
 
-.page-splash h3 {
-  text-transform: uppercase; }
+.page-splash h2 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%; }
 
 /*# sourceMappingURL=main.css.map */
