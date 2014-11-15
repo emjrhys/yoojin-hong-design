@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <section class="page-splash">
-            <video id="splash-video">
+            <video loop autoplay id="splash-video">
                 <source src="assets/yoojin_movie.mp4" type="video/mp4">
             </video>
         </section>
@@ -17,9 +17,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            var video = document.getElementById("splash-video");
-            video.play();
-            
+//            $("#splash-video").ready(function() {
+//                var video = document.getElementById("splash-video");
+//                video.play();
+//            });
         });
     </script>
 </body>
