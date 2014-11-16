@@ -3,7 +3,8 @@
 <head>
 	<title>Yoojin Hong Design</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,400,200,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.maximage.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <div class="container">
@@ -28,8 +29,11 @@
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery.maximage.min.js"></script>
     <script>
         $(document).ready(function() {
+            $("#splash-video").maximage('maxcover');
             $("#splash-video").ready(function() {
                 document.getElementById("splash-video").play();
             });
