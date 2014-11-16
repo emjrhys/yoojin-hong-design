@@ -44,6 +44,7 @@
         <nav class="project-nav">  
             <a href="#">Resume</a>
             <a href="#">About Me</a>
+            <p class="current-page">Welcome</p>
         </nav>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -51,14 +52,8 @@
     <script src="js/background-check.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#slides').superslides();
-            
-            BackgroundCheck.init({
-                targets: '.slider-arrow'
-            });
-            
-            $(document).on('animated.slides', function() {
-                BackgroundCheck.refresh();
+            $('#slides').superslides({
+                hashchange: true
             });
             
             var resizeVideo = function() {
