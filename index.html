@@ -44,7 +44,7 @@
         <nav class="project-nav">  
             <a href="#">Resume</a>
             <a href="#">About Me</a>
-            <p class="current-page">Welcome</p>
+            <p id="current-page-title">Welcome</p>
         </nav>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -82,12 +82,12 @@
             
             function updatePage() {
                 var currPage = parseInt(location.hash.substring(1)) - 1;
-                $('current-page').html(titles[currPage]);
+                $('#current-page-title').html(titles[currPage]);
             }
             
             $(".slides-pagination > a").hover(function() {
                 var i = parseInt($(this).text()) - 1;
-                $('current-page').html(titles[i]);
+                $('#current-page-title').html(titles[i]);
             }, function() {
                 updatePage();
             });
