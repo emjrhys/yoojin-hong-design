@@ -52,6 +52,9 @@
     <script src="js/background-check.min.js"></script>
     <script>
         $(document).ready(function() {
+            var titles = {"Welcome", "Primitive", "Cool Project"};
+            var currTitle = 0;
+            
             $('#slides').superslides({
                 hashchange: true
             });
@@ -75,6 +78,17 @@
             
             $("#splash-video").ready(function() {
                 document.getElementById("splash-video").play();
+            });
+            
+            $(".slides-pagination > a").hover(function() {
+                var i = parseInt($(this).text()) - 1;
+                $('current-page').html(titles[i]);
+            }, function() {
+                
+            });
+            
+            $('html').on('animated.slides', function() {
+                alert('moving'); 
             });
         });
     </script>
