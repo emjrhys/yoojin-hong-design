@@ -3,40 +3,73 @@
 <head>
 	<title>Yoojin Hong Design</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,400,200,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/jquery.maximage.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    
 </head>
 <body>
     <div class="container">
+        <div id="slides">
+            <ul class="slides-container">
+                <li class="page-splash">
+                    <video loop autoplay muted id="splash-video">
+                        <source src="assets/yoojin_movie.mp4" type="video/mp4">
+                    </video>
+                    <div class="splash-content">
+                        <div class="splash-title noselect">
+                            <h2>Yoojin Hong</h2>
+                            <h3>Design Portfolio</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://picjumbo.com/wp-content/uploads/IMG_0992-1300x866.jpg" alt="">
+                    <div class="container">
+                    Slide two
+                    </div>
+                </li>
+                <li>
+                    <img src="http://picjumbo.com/wp-content/uploads/HNCK2574-1300x866.jpg" alt="">
+                    <div class="container">
+                    Slide three
+                    </div>
+                </li>
+            </ul>
+            <nav class="slides-navigation">
+                <a href="#" class="next">Next</a>
+                <a href="#" class="prev">Previous</a>
+            </nav>
+        </div>
+<!--
             <div class="item">
                 <section class="page-splash">
                     <video loop autoplay id="splash-video">
                         <source src="assets/yoojin_movie.mp4" type="video/mp4">
                     </video>
                     <div class="splash-content">
-                        <div class="splash-title">
+                        <div class="splash-title noselect">
                             <h2>Yoojin Hong</h2>
                             <h3>Design Portfolio</h3>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="item">
-                <section class="page-project">
-                </section>
-            </div>
-            <div class="item">
-                <section class="page-project">
-                </section>
-            </div>
-        <nav>  
+-->
+        <nav class="project-nav">  
             <a href="#">Resume</a>
             <a href="#">About Me</a>
         </nav>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
     <script>
         $(document).ready(function() {
+            $('#slides').superslides();
+            
+            var ratio = 1.777;
+            
+            var 
+            
             $("#splash-video").ready(function() {
                 document.getElementById("splash-video").play();
             });

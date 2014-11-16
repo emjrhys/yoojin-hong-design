@@ -4,6 +4,9 @@
   font-weight: inherit;
   font-size: inherit; }
 
+.item {
+  display: none; }
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: black;
@@ -52,14 +55,15 @@ body {
   height: 100%;
   background-color: black; }
 
-nav {
+.project-nav {
   height: 50px;
   width: 100%;
   background-color: black;
   position: fixed;
   bottom: 0;
-  line-height: 50px; }
-  nav a {
+  line-height: 50px;
+  z-index: 20; }
+  .project-nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 100;
@@ -67,5 +71,13 @@ nav {
     margin-left: 60px;
     letter-spacing: 2px;
     color: white; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 /*# sourceMappingURL=main.css.map */
