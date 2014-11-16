@@ -12,8 +12,9 @@ body {
 }
 
 #splash-video {
-    max-width: 100%;
-    min-height: 100%;
+    display: block;
+    width: 100vh * 1.7777;
+    min-height: 100vh;
     position: absolute;
     margin: auto;
     left: 0; right: 0;
