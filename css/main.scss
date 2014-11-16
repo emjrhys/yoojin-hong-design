@@ -14,7 +14,7 @@ body {
 #splash-video {
     display: block;
     min-height: 100%;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -69,9 +69,4 @@ nav {
     background-color: black;
     position: fixed;
     bottom: 0;
-}
-
-.owl-buttons {
-    position: absolute;
-    z-index: 100;
 }
