@@ -1,16 +1,17 @@
 * {
     padding: 0;
     margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 body {
-    font-family: 'AvenirLTStdLight';
+    font-family: 'Raleway', sans-serif;
     overflow: hidden;
     height: 100%;
 }
 
 #splash-video {
-    width: 100%;
     min-height: 100%;
     position: absolute;
     margin: auto;
@@ -18,26 +19,46 @@ body {
 }
 
 .page-splash {
-    .splash-content { 
+    .splash-title { 
+        width: 260px;
+        height: 180px;
+        
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0; top: 0; bottom: 0;
+        
+        color: white;
+        font-weight: 100;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        letter-spacing: 2px;
+        
         h2 {
+            font-size: 24px;
+            font-weight: 200;
+        }
+        
+        h3 {
+            margin-top: 10px;
+            letter-spacing: 5px;
+        }
+        
+        &::before, &::after {
             display: block;
-            width: 260px;
-            height: 40px;
-            border: 8px solid black;
-            font-weight: 400;
-
-            text-align: center;
-            text-transform: uppercase;
-            line-height: 44px;
-            letter-spacing: 3px;
-            color: white;
-
-            position: absolute;
-            margin: auto;
-            bottom: 50px;
-            left: 60px;
-//            left: 0; right: 0; top: 0; bottom: 0;
-            background-color: black;
+            content: "";
+            background-color: white;
+            height: 1px;
+            width: 60px;
+            margin: 28px auto;
+        }
+         
+        &::before {
+        }
+        
+        &::after {
+            
         }
     }
 }

@@ -2,18 +2,22 @@
 <html>
 <head>
 	<title>Yoojin Hong Design</title>
-	<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,800,400,200,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
     <div class="container">
         <div id="content-caro" class="owl-carousel owl-theme">
-            <div class="item"><section class="page-splash">
+            <div class="item">
+                <section class="page-splash">
                     <video loop autoplay id="splash-video">
                         <source src="assets/yoojin_movie.mp4" type="video/mp4">
                     </video>
                     <div class="splash-content">
-                        <h2>Yoojin Hong</h2>
+                        <div class="splash-title">
+                            <h2>Yoojin Hong</h2>
+                            <h3>Design Portfolio</h3>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -26,6 +30,9 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function() {
+            $("#splash-video").ready(function() {
+                document.getElementById("splash-video").play();
+            });
             $("#content-caro").owlCarousel({
                 navigation : true,
                 slideSpeed : 300,
