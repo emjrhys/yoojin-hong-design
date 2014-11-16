@@ -80,17 +80,23 @@
                 document.getElementById("splash-video").play();
             });
             
+            function updatePage() {
+                var currPage = parseInt(location.hash.substring(1)) - 1;
+                $('current-page').html(titles[currPage]);
+            }
+            
             $(".slides-pagination > a").hover(function() {
                 var i = parseInt($(this).text()) - 1;
                 $('current-page').html(titles[i]);
             }, function() {
-                
+                updatePage();
             });
             
             $('html').on('animating.slides', function() {
-                var hash = location.hash;
-                alert(hash);
+                updatePage();
             });
+            
+            updatePage();
         });
     </script>
 </body>
