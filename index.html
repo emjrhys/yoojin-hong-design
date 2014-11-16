@@ -36,25 +36,11 @@
                 </li>
             </ul>
             <nav class="slides-navigation">
-                <a href="#" class="next">Next</a>
-                <a href="#" class="prev">Previous</a>
+                <button class="next slider-arrow">Next</button>
+                <button class="prev slider-arrow">Previous</button>
             </nav>
         </div>
-<!--
-            <div class="item">
-                <section class="page-splash">
-                    <video loop autoplay id="splash-video">
-                        <source src="assets/yoojin_movie.mp4" type="video/mp4">
-                    </video>
-                    <div class="splash-content">
-                        <div class="splash-title noselect">
-                            <h2>Yoojin Hong</h2>
-                            <h3>Design Portfolio</h3>
-                        </div>
-                    </div>
-                </section>
-            </div>
--->
+
         <nav class="project-nav">  
             <a href="#">Resume</a>
             <a href="#">About Me</a>
@@ -62,9 +48,14 @@
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/background-check.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#slides').superslides();
+            
+            BackgroundCheck.init({
+                targets: '.slider-arrow'
+            });
             
             var resizeVideo = function() {
                 var aspectRatio = $(this).height() / $(this).width();
