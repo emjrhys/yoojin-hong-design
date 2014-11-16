@@ -66,9 +66,22 @@
         $(document).ready(function() {
             $('#slides').superslides();
             
-            var ratio = 1.777;
-            
-            var 
+            var resizeVideo = function() {
+                var aspectRatio = $(this).height() / $(this).width();
+                if (aspectRatio > 0.5625) {
+                    $("#splash-video").css({
+                        width: "auto",
+                        height: "100%"
+                    });
+                } else {
+                    $("#splash-video").css({
+                        width: "100%",
+                        height: "auto"
+                    });
+                }
+            }
+
+            $(window).resize(resizeVideo).ready(resizeVideo);
             
             $("#splash-video").ready(function() {
                 document.getElementById("splash-video").play();
