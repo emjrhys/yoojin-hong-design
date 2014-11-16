@@ -3,14 +3,40 @@
   margin: 0; }
 
 body {
-  font-family: 'AvenirLTStdRegular'; }
-
-#splash-video {
+  font-family: 'AvenirLTStdLight';
+  overflow: hidden;
   height: 100%; }
 
-.page-splash h2 {
-  text-transform: uppercase;
+#splash-video {
+  width: 100%;
+  min-height: 100%;
   position: absolute;
-  top: 50%; }
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.page-splash .splash-content h2 {
+  display: block;
+  width: 260px;
+  height: 40px;
+  border: 8px solid black;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 44px;
+  letter-spacing: 3px;
+  color: white;
+  position: absolute;
+  margin: auto;
+  bottom: 50px;
+  left: 60px;
+  background-color: black; }
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,17 +7,31 @@
 </head>
 <body>
     <div class="container">
-        <section class="page-splash">
-            <video loop autoplay id="splash-video">
-                <source src="assets/yoojin_movie.mp4" type="video/mp4">
-            </video>
-            <h2>Yoojin Hong</h2>
-        </section>
+        <div id="content-caro" class="owl-carousel owl-theme">
+            <div class="item"><section class="page-splash">
+                    <video loop autoplay id="splash-video">
+                        <source src="assets/yoojin_movie.mp4" type="video/mp4">
+                    </video>
+                    <div class="splash-content">
+                        <h2>Yoojin Hong</h2>
+                    </div>
+                </section>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
         <nav></nav>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function() {
+            $("#content-caro").owlCarousel({
+                navigation : true,
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem:true
+            });
         });
     </script>
 </body>
