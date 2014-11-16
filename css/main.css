@@ -11,6 +11,29 @@ body {
   height: 100vh;
   width: 100vw; }
 
+.slides-navigation a {
+  cursor: pointer;
+  text-indent: -9999px;
+  background: url(../assets/arrow-light.png);
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms; }
+  .slides-navigation a:hover {
+    background: url(../assets/arrow-light-hover.png);
+    background-size: 40px 40px; }
+  .slides-navigation a.prev {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; }
+
 #splash-video {
   display: block;
   position: relative;
@@ -62,6 +85,15 @@ body {
     margin-left: 60px;
     letter-spacing: 2px;
     color: white; }
+
+.slides-pagination {
+  position: fixed;
+  z-index: 21;
+  bottom: 10px; }
+  .slides-pagination a {
+    background-color: white;
+    width: 14px;
+    height: 14px; }
 
 .noselect {
   -webkit-touch-callout: none;

@@ -1,3 +1,12 @@
+@mixin transition-duration($duration...) {
+    -moz-transition-duration:    $duration;
+    -o-transition-duration:      $duration;
+    -webkit-transition-duration: $duration;
+    transition-duration:         $duration;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +20,35 @@ body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+}
+
+.slides-navigation {
+    a {
+        cursor: pointer;
+        text-indent: -9999px;
+        background: url(../assets/arrow-light.png);
+        background-size: 40px 40px;
+        
+        height: 40px;
+        width: 40px;
+        margin: 0 20px;
+        
+        @include transition-duration(300ms);
+        
+        &:hover {
+            background: url(../assets/arrow-light-hover.png);
+            background-size: 40px 40px;
+        }
+        
+        &.prev {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+    }
 }
 
 #splash-video {
@@ -82,6 +120,19 @@ body {
         margin-left: 60px;
         letter-spacing: 2px;
         color: white;
+    }
+}
+
+.slides-pagination {
+    position: fixed;
+    z-index: 21;
+    
+    bottom: 10px;
+    
+    a {
+        background-color: white;
+        width: 14px;
+        height: 14px;
     }
 }
 

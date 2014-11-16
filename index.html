@@ -57,6 +57,10 @@
                 targets: '.slider-arrow'
             });
             
+            $(document).on('animated.slides', function() {
+                BackgroundCheck.refresh();
+            });
+            
             var resizeVideo = function() {
                 var aspectRatio = $(this).height() / $(this).width();
                 if (aspectRatio > 0.5625) {
