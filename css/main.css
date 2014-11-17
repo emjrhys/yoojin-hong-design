@@ -261,4 +261,16 @@ body {
     top: 20px;
     right: 16px; }
 
+.project-image {
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms; }
+  .project-image.active {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+
 /*# sourceMappingURL=main.css.map */
