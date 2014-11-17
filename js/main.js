@@ -52,7 +52,7 @@ $(document).ready(function() {
         $(this).fadeOut(600); 
     });
     
-    $(".project-image").click(function() {
-        $(this).toggleClass("active");
-    });
+//    $(".project-image").click(function() {
+//        $(this).toggleClass("active");
+//    });
 });
