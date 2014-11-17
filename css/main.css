@@ -96,25 +96,25 @@ body {
     -moz-transition-duration: 300ms;
     -o-transition-duration: 300ms;
     -webkit-transition-duration: 300ms;
-    transition-duration: 300ms; }
+    transition-duration: 300ms;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px; }
   .splash-content.about-active {
     background-color: rgba(0, 0, 0, 0.5); }
     .splash-content.about-active .splash-title {
       opacity: 0; }
     .splash-content.about-active .splash-about {
-      opacity: 1;
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 300px;
-      height: 300px;
-      color: white;
-      font-size: 14px;
-      text-align: center;
-      letter-spacing: 1px; }
+      opacity: 1; }
 
 .project-nav {
   height: 50px;
@@ -242,5 +242,21 @@ body {
         -moz-column-gap: 42px;
         /* Firefox */
         column-gap: 42px; }
+
+.project-splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  cursor: pointer; }
+  .project-splash h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 16px; }
 
 /*# sourceMappingURL=main.css.map */

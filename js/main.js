@@ -47,4 +47,8 @@ $(document).ready(function() {
     $(".about-button").click(function() {
         $(".splash-content").toggleClass("about-active"); 
     });
+    
+    $(".project-splash").click(function() {
+        $(this).fadeOut(300); 
+    });
 });
