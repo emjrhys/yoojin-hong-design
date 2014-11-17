@@ -224,177 +224,165 @@ body {
     }
 }
 
-.primitive-container {
+.project-container {
     height: calc(100vh - 50px);
     width: 100%;
     background-color: white;
     
-    .left, .right {
-        height: 100%;
-    }
-    
-    .left {
-        float: left;
-        width: calc(100% - 600px);
+    .project-splash {
+        position: absolute;
+        top: 0;
         left: 0;
-        
-        .top {
-            height: 30%;
-            
-            .top-photo-1 {
-                float: left;
-                height: 100%;
-                width: 45%;
-                background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
-                background-size: cover;
-            }
-            
-            .top-right {
-                width: 30%;
-                height: 100%;
-                float: right;
-                .top-photo-2 {
-                    height: 50%;
-                    width: 100%;
-                    background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
-                    background-size: cover;
-                }
+        width: 100%;
+        height: 100%;
+        background-color: white;
 
-                .top-photo-3 {
-                    height: 50%;
-                    width: 100%;
-                    background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
-                    background-size: cover;
-                }
-            }
-        }
-        .bottom {
+        cursor: pointer;
+
+        &.project-splash-primitive {
             background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+            background-color: white;
+        }
+        
+        &.project-splash-nectar {
+            background: url(../assets/projects/nectar/5.png) no-repeat center center;
             background-size: cover;
-            height: 70%;
+            background-color: white;
         }
-    }
-    
-    .right {
-        float: left;
-        width: 600px;
-        
-        div {
-            border: 8px solid black;
-            margin-left: 14px;
-            margin-top: 14px;
-            width: calc(100% - 95px);
-            
-            padding: 14px 26px;
-            
-            h3 {
-                font: {
-                    weight: 600;
-                    size: 20px;
-                }
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                margin-bottom: 8px;
+
+        h2 {
+            text: {
+                transform: uppercase;
             }
-            
-            h4 {
-                font: {
-                    weight: 600;
-                    size: 14px;
-                }
-                margin-bottom: 8px;
-                letter-spacing: 1px;
+            font: {
+                weight: 200;
+                size: 16px;
             }
-        
-            p {
-                
-                font-size: 14px;
+            color: black;
+            letter-spacing: 3px;
 
-                -webkit-column-count: 2; /* Chrome, Safari, Opera */
-                -moz-column-count: 2; /* Firefox */
-                column-count: 2;
-                -webkit-column-gap: 42px; /* Chrome, Safari, Opera */
-                -moz-column-gap: 42px; /* Firefox */
-                column-gap: 42px;
-            }
+
+            position: absolute;
+            top: 24px;
+            right: 20px;
         }
-    }
-}
 
-.project-splash {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    
-    cursor: pointer;
-    
-    &.project-splash-primitive {
-        background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
-        background-color: white;
-    }
-    
-    h2 {
-        text: {
-            transform: uppercase;
-        }
-        font: {
-            weight: 200;
-            size: 16px;
-        }
-        color: black;
-        letter-spacing: 3px;
-
-        
-        position: absolute;
-        top: 24px;
-        right: 20px;
-    }
-    
-    p {
-        width: 200px;
-        text-align: center;
-        font-size: 12px;
-        text-transform: lowercase;
-        position: absolute;
-        margin: auto;
-        left: 0; right: 0;
-        bottom: 70px;
-    }
-    
-    button {
-        display: none;
-        position: absolute;
-        margin: auto;
-        bottom: 4px;
-        left: 0; right: 0;
-
-        width: 80px;
-        height: 80px;
-        
-        border-radius: 50%;
-        border: 3px solid black;
-        
-        background-color: white;
-        
-        &::after {
-            content: "";
-            background-color: black;
-            width: 64px;
-            height: 64px;
-            
-            border-radius: 50%;
+        p {
             position: absolute;
             margin: auto;
-            left: 0; right: 0;
-            bottom: 6px;
-            
-            cursor: pointer;
+            right: 22px;
+            top: 50px;
+
+            width: 106px;
+            height: 14px;
+
+
+            text: {
+                align: right;
+                transform: lowercase;
+            }
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    
+    &.primitive-container {
+        .left, .right {
+            height: 100%;
+        }
+
+        .left {
+            float: left;
+            width: calc(100% - 600px);
+            left: 0;
+
+            .top {
+                height: 30%;
+
+                .top-photo-1 {
+                    float: left;
+                    height: 100%;
+                    width: 45%;
+                    background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
+                    background-size: cover;
+                }
+
+                .top-right {
+                    width: 30%;
+                    height: 100%;
+                    float: right;
+                    .top-photo-2 {
+                        height: 50%;
+                        width: 100%;
+                        background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+
+                    .top-photo-3 {
+                        height: 50%;
+                        width: 100%;
+                        background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
+                        background-size: cover;
+                    }
+                }
+            }
+            .bottom {
+                background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+                background-size: cover;
+                height: 70%;
+            }
+        }
+
+        .right {
+            float: left;
+            width: 600px;
+
+            div {
+                border: 8px solid black;
+                margin-left: 14px;
+                margin-top: 14px;
+                width: calc(100% - 95px);
+
+                padding: 14px 26px;
+
+                h3 {
+                    font: {
+                        weight: 600;
+                        size: 20px;
+                    }
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    margin-bottom: 8px;
+                }
+
+                h4 {
+                    font: {
+                        weight: 600;
+                        size: 14px;
+                    }
+                    margin-bottom: 8px;
+                    letter-spacing: 1px;
+                }
+
+                p {
+
+                    font-size: 14px;
+
+                    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+                    -moz-column-count: 2; /* Firefox */
+                    column-count: 2;
+                    -webkit-column-gap: 42px; /* Chrome, Safari, Opera */
+                    -moz-column-gap: 42px; /* Firefox */
+                    column-gap: 42px;
+                }
+            }
         }
     }
 }
+
+
+
+
 
 .project-image {
     @include transition-duration(400ms);

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var titles = ["Welcome", "Primitive Magazine", "Little Robin Red Breast"];
+    var titles = ["Welcome", "Primitive Magazine", "Nectar"];
 
     $('#slides').superslides({
         hashchange: true
@@ -40,6 +40,10 @@ $(document).ready(function() {
 
     $('html').on('animating.slides', function() {
         updatePage();
+        $('.project-splash').css({
+            display: block;
+            opacity: 1;
+        });
     });
 
     updatePage();
@@ -49,7 +53,7 @@ $(document).ready(function() {
     });
     
     $(".project-splash").click(function() {
-        $(this).fadeOut(600); 
+        $(this).fadeOut(300); 
     });
     
 //    $(".project-image").click(function() {

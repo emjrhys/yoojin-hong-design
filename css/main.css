@@ -174,63 +174,98 @@ body {
       width: 12px;
       height: 12px; }
 
-.primitive-container {
+.project-container {
   height: calc(100vh - 50px);
   width: 100%;
   background-color: white; }
-  .primitive-container .left, .primitive-container .right {
+  .project-container .project-splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    cursor: pointer; }
+    .project-container .project-splash.project-splash-primitive {
+      background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+      background-color: white; }
+    .project-container .project-splash.project-splash-nectar {
+      background: url(../assets/projects/nectar/5.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
+    .project-container .project-splash h2 {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 16px;
+      color: black;
+      letter-spacing: 3px;
+      position: absolute;
+      top: 24px;
+      right: 20px; }
+    .project-container .project-splash p {
+      position: absolute;
+      margin: auto;
+      right: 22px;
+      top: 50px;
+      width: 106px;
+      height: 14px;
+      text-align: right;
+      text-transform: lowercase;
+      font-size: 12px;
+      font-weight: 300; }
+  .project-container.primitive-container .left, .project-container.primitive-container .right {
     height: 100%; }
-  .primitive-container .left {
+  .project-container.primitive-container .left {
     float: left;
     width: calc(100% - 600px);
     left: 0; }
-    .primitive-container .left .top {
+    .project-container.primitive-container .left .top {
       height: 30%; }
-      .primitive-container .left .top .top-photo-1 {
+      .project-container.primitive-container .left .top .top-photo-1 {
         float: left;
         height: 100%;
         width: 45%;
         background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
         background-size: cover; }
-      .primitive-container .left .top .top-right {
+      .project-container.primitive-container .left .top .top-right {
         width: 30%;
         height: 100%;
         float: right; }
-        .primitive-container .left .top .top-right .top-photo-2 {
+        .project-container.primitive-container .left .top .top-right .top-photo-2 {
           height: 50%;
           width: 100%;
           background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
           background-size: cover; }
-        .primitive-container .left .top .top-right .top-photo-3 {
+        .project-container.primitive-container .left .top .top-right .top-photo-3 {
           height: 50%;
           width: 100%;
           background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
           background-size: cover; }
-    .primitive-container .left .bottom {
+    .project-container.primitive-container .left .bottom {
       background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
       background-size: cover;
       height: 70%; }
-  .primitive-container .right {
+  .project-container.primitive-container .right {
     float: left;
     width: 600px; }
-    .primitive-container .right div {
+    .project-container.primitive-container .right div {
       border: 8px solid black;
       margin-left: 14px;
       margin-top: 14px;
       width: calc(100% - 95px);
       padding: 14px 26px; }
-      .primitive-container .right div h3 {
+      .project-container.primitive-container .right div h3 {
         font-weight: 600;
         font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-bottom: 8px; }
-      .primitive-container .right div h4 {
+      .project-container.primitive-container .right div h4 {
         font-weight: 600;
         font-size: 14px;
         margin-bottom: 8px;
         letter-spacing: 1px; }
-      .primitive-container .right div p {
+      .project-container.primitive-container .right div p {
         font-size: 14px;
         -webkit-column-count: 2;
         /* Chrome, Safari, Opera */
@@ -242,61 +277,6 @@ body {
         -moz-column-gap: 42px;
         /* Firefox */
         column-gap: 42px; }
-
-.project-splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  cursor: pointer; }
-  .project-splash.project-splash-primitive {
-    background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
-    background-color: white; }
-  .project-splash h2 {
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 16px;
-    color: black;
-    letter-spacing: 3px;
-    position: absolute;
-    top: 24px;
-    right: 20px; }
-  .project-splash p {
-    width: 200px;
-    text-align: center;
-    font-size: 12px;
-    text-transform: lowercase;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 70px; }
-  .project-splash button {
-    display: none;
-    position: absolute;
-    margin: auto;
-    bottom: 4px;
-    left: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid black;
-    background-color: white; }
-    .project-splash button::after {
-      content: "";
-      background-color: black;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      bottom: 6px;
-      cursor: pointer; }
 
 .project-image {
   -moz-transition-duration: 400ms;
