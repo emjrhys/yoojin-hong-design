@@ -22,7 +22,7 @@ body {
 .slides-navigation a {
   cursor: pointer;
   text-indent: -9999px;
-  background: url(../assets/arrow-dark.png);
+  background: url(../assets/navigation/arrow-dark.png);
   background-size: 40px 40px;
   height: 40px;
   width: 40px;
@@ -32,7 +32,7 @@ body {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms; }
   .slides-navigation a:hover {
-    background: url(../assets/arrow-dark-hover.png);
+    background: url(../assets/navigation/arrow-dark-hover.png);
     background-size: 40px 40px; }
   .slides-navigation a.prev {
     -moz-transform: scaleX(-1);
@@ -169,7 +169,7 @@ body {
     .slides-pagination a.current {
       border: none;
       border-radius: 0px;
-      background: url(../assets/page-selected.png) center center;
+      background: url(../assets/navigation/page-selected.png) center center;
       background-size: 40px 40px;
       width: 12px;
       height: 12px; }
