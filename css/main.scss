@@ -65,7 +65,7 @@ body {
     transform: translate(-50%, 0);
 }
 
-.page-splash {
+.splash-content {
     @include transition-duration(300ms);
     background-color: rgba(0, 0, 0, 0);
     

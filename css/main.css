@@ -48,13 +48,13 @@ body {
   left: 50%;
   transform: translate(-50%, 0); }
 
-.page-splash {
+.splash-content {
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
   background-color: transparent; }
-  .page-splash .splash-title {
+  .splash-content .splash-title {
     width: 260px;
     height: 180px;
     position: absolute;
@@ -73,22 +73,22 @@ body {
     -o-transition-duration: 300ms;
     -webkit-transition-duration: 300ms;
     transition-duration: 300ms; }
-    .page-splash .splash-title h2 {
+    .splash-content .splash-title h2 {
       font-size: 24px;
       font-weight: 200; }
-    .page-splash .splash-title h3 {
+    .splash-content .splash-title h3 {
       margin-top: 10px;
       letter-spacing: 5px; }
-    .page-splash .splash-title::before, .page-splash .splash-title::after {
+    .splash-content .splash-title::before, .splash-content .splash-title::after {
       display: block;
       content: "";
       background-color: white;
       height: 1px;
       width: 60px;
       margin: 28px auto; }
-  .page-splash.about-active {
+  .splash-content.about-active {
     background-color: rgba(0, 0, 0, 0.2); }
-    .page-splash.about-active .splash-title {
+    .splash-content.about-active .splash-title {
       opacity: 0; }
 
 .project-nav {

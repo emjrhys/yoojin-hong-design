@@ -45,6 +45,6 @@ $(document).ready(function() {
     updatePage();
     
     $(".about-button").click(function() {
-        $(".page-splash").toggleClass("about-active"); 
+        $(".splash-content").toggleClass("about-active"); 
     });
 });
