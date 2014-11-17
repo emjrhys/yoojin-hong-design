@@ -1,284 +1,58 @@
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+/*
+Error: Invalid CSS after "...ackground-color": expected ";", was ": white;"
+        on line 363 of css/main.scss
 
-* {
-  padding: 0;
-  margin: 0;
-  font-weight: inherit;
-  font-size: inherit; }
+358:         height: 80px;
+359:         
+360:         border-radius: 50%;
+361:         border: 3px solid black
+362:         
+363:         background-color: white;
+364:     }
+365: }
+366: 
+367: .project-image {
+368:     @include transition-duration(400ms);
 
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: black;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw; }
-
-.slides-navigation a {
-  cursor: pointer;
-  text-indent: -9999px;
-  background: url(../assets/arrow-dark.png);
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px;
-  margin: 0 20px;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms; }
-  .slides-navigation a:hover {
-    background: url(../assets/arrow-dark-hover.png);
-    background-size: 40px 40px; }
-  .slides-navigation a.prev {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH"; }
-
-#splash-video {
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0); }
-
-.splash-content {
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
-  .splash-content .splash-title {
-    width: 260px;
-    height: 180px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    color: white;
-    font-weight: 100;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    -moz-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms; }
-    .splash-content .splash-title h2 {
-      font-size: 24px;
-      font-weight: 200; }
-    .splash-content .splash-title h3 {
-      margin-top: 10px;
-      letter-spacing: 5px; }
-    .splash-content .splash-title::before, .splash-content .splash-title::after {
-      display: block;
-      content: "";
-      background-color: white;
-      height: 1px;
-      width: 60px;
-      margin: 28px auto; }
-  .splash-content .splash-about {
-    opacity: 0;
-    -moz-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 300px;
-    height: 300px;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 1px; }
-  .splash-content.about-active {
-    background-color: rgba(0, 0, 0, 0.5); }
-    .splash-content.about-active .splash-title {
-      opacity: 0; }
-    .splash-content.about-active .splash-about {
-      opacity: 1; }
-
-.project-nav {
-  height: 50px;
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  bottom: 0;
-  line-height: 50px;
-  z-index: 20;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 13px;
-  letter-spacing: 2px; }
-  .project-nav a {
-    text-decoration: none;
-    color: inherit;
-    margin-left: 60px; }
-  .project-nav p {
-    position: absolute;
-    width: 240px;
-    text-align: center;
-    display: inline-block;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-    .project-nav p::before, .project-nav p::after {
-      content: "";
-      display: block;
-      position: fixed;
-      width: 1px;
-      height: 20px;
-      background-color: white;
-      margin-top: 14px; }
-    .project-nav p::after {
-      margin-top: -36px;
-      margin-left: 238px; }
-
-.slides-pagination {
-  position: fixed;
-  z-index: 21;
-  bottom: 16px;
-  right: 20px;
-  width: 200px; }
-  .slides-pagination a {
-    background-color: white;
-    border: none;
-    width: 12px;
-    height: 12px;
-    margin-left: 20px; }
-    .slides-pagination a.current {
-      border: none;
-      border-radius: 0px;
-      background: url(../assets/page-selected.png) center center;
-      background-size: 40px 40px;
-      width: 12px;
-      height: 12px; }
-
-.primitive-container {
-  height: calc(100vh - 50px);
-  width: 100%;
-  background-color: white; }
-  .primitive-container .left, .primitive-container .right {
-    height: 100%; }
-  .primitive-container .left {
-    float: left;
-    width: calc(100% - 600px);
-    left: 0; }
-    .primitive-container .left .top {
-      height: 30%; }
-      .primitive-container .left .top .top-photo-1 {
-        float: left;
-        height: 100%;
-        width: 45%;
-        background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
-        background-size: cover; }
-      .primitive-container .left .top .top-right {
-        width: 30%;
-        height: 100%;
-        float: right; }
-        .primitive-container .left .top .top-right .top-photo-2 {
-          height: 50%;
-          width: 100%;
-          background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
-          background-size: cover; }
-        .primitive-container .left .top .top-right .top-photo-3 {
-          height: 50%;
-          width: 100%;
-          background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
-          background-size: cover; }
-    .primitive-container .left .bottom {
-      background: url(../assets/projects/primitive/mobile-3-07.png) no-repeat center center;
-      background-size: cover;
-      height: 70%; }
-  .primitive-container .right {
-    float: left;
-    width: 600px; }
-    .primitive-container .right div {
-      border: 8px solid black;
-      margin-left: 14px;
-      margin-top: 14px;
-      width: calc(100% - 95px);
-      padding: 14px 26px; }
-      .primitive-container .right div h3 {
-        font-weight: 600;
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-bottom: 8px; }
-      .primitive-container .right div h4 {
-        font-weight: 600;
-        font-size: 14px;
-        margin-bottom: 8px;
-        letter-spacing: 1px; }
-      .primitive-container .right div p {
-        font-size: 14px;
-        -webkit-column-count: 2;
-        /* Chrome, Safari, Opera */
-        -moz-column-count: 2;
-        /* Firefox */
-        column-count: 2;
-        -webkit-column-gap: 42px;
-        /* Chrome, Safari, Opera */
-        -moz-column-gap: 42px;
-        /* Firefox */
-        column-gap: 42px; }
-
-.project-splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  cursor: pointer; }
-  .project-splash h2 {
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 16px;
-    color: black;
-    letter-spacing: 3px;
-    position: absolute;
-    top: 24px;
-    right: 20px; }
-  .project-splash button {
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    background-color: black; }
-
-.project-image {
-  -moz-transition-duration: 400ms;
-  -o-transition-duration: 400ms;
-  -webkit-transition-duration: 400ms;
-  transition-duration: 400ms; }
-  .project-image.active {
-    position: absolute;
-    height: 100vh !important;
-    width: 100vw !important;
-    top: 0 !important;
-    left: 0 !important; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+css/main.scss:363
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1163:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1099:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1094:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:761:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1139:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1139:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:766:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:696:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:635:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:660:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ackground-color\": expected \";\", was \": white;\"\A         on line 363 of css/main.scss\A \A 358:         height: 80px;\A 359:         \A 360:         border-radius: 50%;\A 361:         border: 3px solid black\A 362:         \A 363:         background-color: white;\A 364:     }\A 365: }\A 366: \A 367: .project-image {\A 368:     @include transition-duration(400ms);"; }
