@@ -52,7 +52,8 @@ body {
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
-  transition-duration: 300ms; }
+  transition-duration: 300ms;
+  background-color: transparent; }
   .page-splash .splash-title {
     width: 260px;
     height: 180px;
@@ -67,7 +68,11 @@ body {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms; }
     .page-splash .splash-title h2 {
       font-size: 24px;
       font-weight: 200; }
@@ -84,7 +89,7 @@ body {
   .page-splash.about-active {
     background-color: rgba(0, 0, 0, 0.2); }
     .page-splash.about-active .splash-title {
-      display: none; }
+      opacity: 0; }
 
 .project-nav {
   height: 50px;
