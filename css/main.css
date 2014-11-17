@@ -147,9 +147,30 @@ body {
     left: 0; }
     .primitive-container .left .top {
       height: 30%;
-      background-color: green; }
+      background-color: white; }
+      .primitive-container .left .top .top-photo-1 {
+        float: left;
+        height: 100%;
+        width: 45%;
+        background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
+        background-size: cover; }
+      .primitive-container .left .top .top-right {
+        width: 30%;
+        height: 100%;
+        float: right; }
+        .primitive-container .left .top .top-right .top-photo-2 {
+          height: 50%;
+          width: 100%;
+          background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
+          background-size: cover; }
+        .primitive-container .left .top .top-right .top-photo-3 {
+          height: 50%;
+          width: 100%;
+          background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
+          background-size: cover; }
     .primitive-container .left .bottom {
       background: url(../assets/projects/primitive/11.jpg) no-repeat center center;
+      background-size: auto auto;
       height: 70%; }
   .primitive-container .right {
     float: left;
