@@ -55,7 +55,8 @@ body {
   transition-duration: 300ms;
   background-color: transparent;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: absolute; }
   .splash-content .splash-title {
     width: 260px;
     height: 180px;
