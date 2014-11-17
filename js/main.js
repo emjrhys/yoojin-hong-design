@@ -49,6 +49,6 @@ $(document).ready(function() {
     });
     
     $(".project-splash").click(function() {
-        $(this).fadeOut(1200); 
+        $(this).fadeOut(600); 
     });
 });
