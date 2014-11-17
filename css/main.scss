@@ -357,13 +357,15 @@ body {
         width: 200px;
         text-align: center;
         font-size: 12px;
+        text-transform: lowercase;
         position: absolute;
         margin: auto;
         left: 0; right: 0;
-        bottom: 90px;
+        bottom: 70px;
     }
     
     button {
+        display: none;
         position: absolute;
         margin: auto;
         bottom: 4px;
