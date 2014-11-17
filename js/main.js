@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     $('html').on('animating.slides', function() {
         updatePage();
-        $(".project-image").each().removeClass("active");
+        $(".project-image").removeClass("active");
     });
 
     updatePage();
