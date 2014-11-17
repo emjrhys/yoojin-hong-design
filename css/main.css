@@ -91,10 +91,30 @@ body {
       height: 1px;
       width: 60px;
       margin: 28px auto; }
+  .splash-content .splash-about {
+    opacity: 0;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms; }
   .splash-content.about-active {
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.5); }
     .splash-content.about-active .splash-title {
       opacity: 0; }
+    .splash-content.about-active .splash-about {
+      opacity: 1;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      height: 300px;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 1px; }
 
 .project-nav {
   height: 50px;
