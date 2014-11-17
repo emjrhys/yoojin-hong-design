@@ -347,12 +347,23 @@ body {
         top: 24px;
         right: 20px;
     }
+    
+    button {
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0; right: 0;
+        
+        border-radius: 50%;
+        
+        background-color: black;
+    }
 }
 
 .project-image {
     @include transition-duration(400ms);
     
-    cursor: pointer;
+//    cursor: pointer;
     
     &.active {
         position: absolute;
