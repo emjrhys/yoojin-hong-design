@@ -56,7 +56,9 @@ body {
   background-color: transparent;
   height: 100%;
   width: 100%;
-  position: absolute; }
+  position: absolute;
+  top: 0;
+  left: 0; }
   .splash-content .splash-title {
     width: 260px;
     height: 180px;
