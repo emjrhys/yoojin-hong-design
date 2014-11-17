@@ -38,7 +38,7 @@ body {
         
         height: 40px;
         width: 40px;
-        margin: 0 20px;
+        margin: 0 30px;
         
         @include transition-duration(300ms);
         
@@ -54,6 +54,33 @@ body {
             transform: scaleX(-1);
             filter: FlipH;
             -ms-filter: "FlipH";
+        }
+    }
+}
+
+.slides-pagination {
+    position: fixed;
+    z-index: 21;
+    
+    bottom: 16px;
+    right: 20px;
+    width: 200px;
+    
+    a {
+        background-color: white;
+        border: none;
+        width: 12px;
+        height: 12px;
+        margin-left: 20px;
+        
+        &.current {
+            border: none;
+            border-radius: 0px;
+            background: url(../assets/navigation/page-selected.png) center center;
+            background-size: 40px 40px;
+            
+            width: 12px;
+            height: 12px;
         }
     }
 }
@@ -193,33 +220,6 @@ body {
         &::after {
             margin-top: -36px;
             margin-left: 238px;
-        }
-    }
-}
-
-.slides-pagination {
-    position: fixed;
-    z-index: 21;
-    
-    bottom: 16px;
-    right: 20px;
-    width: 200px;
-    
-    a {
-        background-color: white;
-        border: none;
-        width: 12px;
-        height: 12px;
-        margin-left: 20px;
-        
-        &.current {
-            border: none;
-            border-radius: 0px;
-            background: url(../assets/navigation/page-selected.png) center center;
-            background-size: 40px 40px;
-            
-            width: 12px;
-            height: 12px;
         }
     }
 }
@@ -377,12 +377,22 @@ body {
                 }
             }
         }
+        
+        .nectar-content {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
-
-
-
+.box {
+    width: 24%;
+    height: 25%;
+    
+    &.w2 {
+        width: 49%;
+    }
+}
 
 .project-image {
     @include transition-duration(400ms);
