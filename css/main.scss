@@ -269,7 +269,7 @@ body {
             }
         }
         .bottom {
-            background: url(../assets/projects/primitive/mobile-3-07.png) no-repeat center center;
+            background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
             background-size: cover;
             height: 70%;
         }
@@ -331,6 +331,11 @@ body {
     
     cursor: pointer;
     
+    &.project-splash-primitive {
+        background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+        background-color: white;
+    }
+    
     h2 {
         text: {
             transform: uppercase;
@@ -348,12 +353,22 @@ body {
         right: 20px;
     }
     
+    p {
+        width: 200px;
+        text-align: center;
+        font-size: 12px;
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0;
+        bottom: 90px;
+    }
+    
     button {
         position: absolute;
         margin: auto;
-        bottom: 0;
+        bottom: 4px;
         left: 0; right: 0;
-        
+
         width: 80px;
         height: 80px;
         
@@ -361,6 +376,21 @@ body {
         border: 3px solid black;
         
         background-color: white;
+        
+        &::after {
+            content: "";
+            background-color: black;
+            width: 64px;
+            height: 64px;
+            
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+            left: 0; right: 0;
+            bottom: 6px;
+            
+            cursor: pointer;
+        }
     }
 }
 

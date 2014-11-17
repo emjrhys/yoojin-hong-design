@@ -207,7 +207,7 @@ body {
           background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
           background-size: cover; }
     .primitive-container .left .bottom {
-      background: url(../assets/projects/primitive/mobile-3-07.png) no-repeat center center;
+      background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
       background-size: cover;
       height: 70%; }
   .primitive-container .right {
@@ -251,6 +251,9 @@ body {
   height: 100%;
   background-color: white;
   cursor: pointer; }
+  .project-splash.project-splash-primitive {
+    background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+    background-color: white; }
   .project-splash h2 {
     text-transform: uppercase;
     font-weight: 200;
@@ -260,10 +263,19 @@ body {
     position: absolute;
     top: 24px;
     right: 20px; }
+  .project-splash p {
+    width: 200px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 90px; }
   .project-splash button {
     position: absolute;
     margin: auto;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     right: 0;
     width: 80px;
@@ -271,6 +283,18 @@ body {
     border-radius: 50%;
     border: 3px solid black;
     background-color: white; }
+    .project-splash button::after {
+      content: "";
+      background-color: black;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+      cursor: pointer; }
 
 .project-image {
   -moz-transition-duration: 400ms;
