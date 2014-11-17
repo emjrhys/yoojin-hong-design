@@ -190,7 +190,6 @@ body {
     width: 100%;
     
     .left, .right {
-        position: absolute;
         height: 100%;
     }
     
@@ -199,18 +198,26 @@ body {
         width: calc(100% - 600px);
         background-color: blue;
         left: 0;
+        
+        .top {
+            height: 30%;
+            background-color: green;
+        }
+        .bottom {
+            background: url(../assets/projects/primitive/11.jpg) no-repeat center center;
+            height: 70%;
+        }
     }
     
     .right {
-        right: 0;
-        width: 600px;;
+        float: left;
+        width: 600px;
         background-color: white;
         
         div {
             border: 8px solid black;
-            position: absolute;
-            bottom: 64px;
-            right: 14px;
+            margin-left: 14px;
+            margin-top: 14px;
             width: calc(100% - 95px);
             
             padding: 14px 26px;
