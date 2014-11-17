@@ -68,6 +68,8 @@ body {
 .splash-content {
     @include transition-duration(300ms);
     background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
     
     .splash-title { 
         width: 260px;
