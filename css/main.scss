@@ -66,6 +66,8 @@ body {
 }
 
 .page-splash {
+    @include transition-duration(300ms);
+    
     .splash-title { 
         width: 260px;
         height: 180px;
@@ -99,6 +101,14 @@ body {
             height: 1px;
             width: 60px;
             margin: 28px auto;
+        }
+    }
+    
+    &.about-active {
+        background-color: rgba(0, 0, 0, .2);
+        
+        .splash-title {
+            display: none;
         }
     }
 }

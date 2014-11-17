@@ -48,34 +48,43 @@ body {
   left: 50%;
   transform: translate(-50%, 0); }
 
-.page-splash .splash-title {
-  width: 260px;
-  height: 180px;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  color: white;
-  font-weight: 100;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-  .page-splash .splash-title h2 {
-    font-size: 24px;
-    font-weight: 200; }
-  .page-splash .splash-title h3 {
-    margin-top: 10px;
-    letter-spacing: 5px; }
-  .page-splash .splash-title::before, .page-splash .splash-title::after {
-    display: block;
-    content: "";
-    background-color: white;
-    height: 1px;
-    width: 60px;
-    margin: 28px auto; }
+.page-splash {
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms; }
+  .page-splash .splash-title {
+    width: 260px;
+    height: 180px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .page-splash .splash-title h2 {
+      font-size: 24px;
+      font-weight: 200; }
+    .page-splash .splash-title h3 {
+      margin-top: 10px;
+      letter-spacing: 5px; }
+    .page-splash .splash-title::before, .page-splash .splash-title::after {
+      display: block;
+      content: "";
+      background-color: white;
+      height: 1px;
+      width: 60px;
+      margin: 28px auto; }
+  .page-splash.about-active {
+    background-color: rgba(0, 0, 0, 0.2); }
+    .page-splash.about-active .splash-title {
+      display: none; }
 
 .project-nav {
   height: 50px;

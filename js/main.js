@@ -43,4 +43,8 @@ $(document).ready(function() {
     });
 
     updatePage();
+    
+    $(".about-button").click(function() {
+        $(".page-splash").toggleClass("about-active"); 
+    });
 });
