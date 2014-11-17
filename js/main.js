@@ -41,15 +41,6 @@ $(document).ready(function() {
     }, function() {
         updatePage();
     });
-    
-    //var containerWidth = 800;
-    $('#nectar-content').masonry({
-        itemSelector: '.box',
-        columnWidth: function( containerWidth ) {
-            return containerWidth /4;
-        }(),
-        isAnimated: false
-    });
 
     // listeners for carousel actions
     $('html').on('animating.slides', function() {

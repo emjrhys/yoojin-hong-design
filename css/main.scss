@@ -385,15 +385,6 @@ body {
     }
 }
 
-.box { 
-    width: 24.99%;
-    height: 300px;
-    
-    &.w2 {
-        width: 49.999%;
-    }
-}
-
 .project-image {
     @include transition-duration(400ms);
     
