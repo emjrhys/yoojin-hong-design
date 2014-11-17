@@ -188,6 +188,7 @@ body {
 .primitive-container {
     height: calc(100vh - 50px);
     width: 100%;
+    background-color: white;
     
     .left, .right {
         height: 100%;
@@ -196,12 +197,10 @@ body {
     .left {
         float: left;
         width: calc(100% - 600px);
-        background-color: blue;
         left: 0;
         
         .top {
             height: 30%;
-            background-color: white;
             
             .top-photo-1 {
                 float: left;
@@ -240,7 +239,6 @@ body {
     .right {
         float: left;
         width: 600px;
-        background-color: white;
         
         div {
             border: 8px solid black;

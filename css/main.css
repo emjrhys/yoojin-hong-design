@@ -137,17 +137,16 @@ body {
 
 .primitive-container {
   height: calc(100vh - 50px);
-  width: 100%; }
+  width: 100%;
+  background-color: white; }
   .primitive-container .left, .primitive-container .right {
     height: 100%; }
   .primitive-container .left {
     float: left;
     width: calc(100% - 600px);
-    background-color: blue;
     left: 0; }
     .primitive-container .left .top {
-      height: 30%;
-      background-color: white; }
+      height: 30%; }
       .primitive-container .left .top .top-photo-1 {
         float: left;
         height: 100%;
@@ -174,8 +173,7 @@ body {
       height: 70%; }
   .primitive-container .right {
     float: left;
-    width: 600px;
-    background-color: white; }
+    width: 600px; }
     .primitive-container .right div {
       border: 8px solid black;
       margin-left: 14px;
