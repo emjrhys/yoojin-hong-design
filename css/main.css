@@ -169,7 +169,7 @@ body {
           background-size: cover; }
     .primitive-container .left .bottom {
       background: url(../assets/projects/primitive/mobile-3-07.png) no-repeat center center;
-      background-size: auto auto;
+      background-size: cover;
       height: 70%; }
   .primitive-container .right {
     float: left;
