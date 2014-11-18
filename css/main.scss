@@ -265,25 +265,28 @@ body {
             position: absolute;
             top: 24px;
             right: 20px;
-        }
+            
+            &::after {
+                content: "Click for more info";
+                position: absolute;
+                margin: auto;
+                right: 3px;
+                top: 26px;
 
-        p {
-            position: absolute;
-            margin: auto;
-            right: 22px;
-            top: 50px;
-
-            width: 106px;
-            height: 14px;
+                width: 106px;
+                height: 14px;
 
 
-            text: {
-                align: right;
-                transform: lowercase;
+                text: {
+                    align: right;
+                    transform: lowercase;
+                }
+                font-size: 12px;
+                font-weight: 300;
+                
+                letter-spacing: 0;
             }
-            font-size: 12px;
-            font-weight: 300;
-        }
+        }        
     }
     
     &.primitive-container {

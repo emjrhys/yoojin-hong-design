@@ -202,17 +202,19 @@ body {
       position: absolute;
       top: 24px;
       right: 20px; }
-    .project-container .project-splash p {
-      position: absolute;
-      margin: auto;
-      right: 22px;
-      top: 50px;
-      width: 106px;
-      height: 14px;
-      text-align: right;
-      text-transform: lowercase;
-      font-size: 12px;
-      font-weight: 300; }
+      .project-container .project-splash h2::after {
+        content: "Click for more info";
+        position: absolute;
+        margin: auto;
+        right: 3px;
+        top: 26px;
+        width: 106px;
+        height: 14px;
+        text-align: right;
+        text-transform: lowercase;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0; }
   .project-container.primitive-container .left, .project-container.primitive-container .right {
     height: 100%; }
   .project-container.primitive-container .left {
