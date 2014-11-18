@@ -32,7 +32,7 @@ body {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms; }
   .slides-navigation a:hover {
-    background: url(../assets/navigation/arrow-dark-hover.png);
+    background: url(../assets/navigation/arrow-light.png);
     background-size: 40px 40px; }
   .slides-navigation a.prev {
     -moz-transform: scaleX(-1);

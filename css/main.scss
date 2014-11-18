@@ -43,7 +43,7 @@ body {
         @include transition-duration(300ms);
         
         &:hover {
-            background: url(../assets/navigation/arrow-dark-hover.png);
+            background: url(../assets/navigation/arrow-light.png);
             background-size: 40px 40px;
         }
         
