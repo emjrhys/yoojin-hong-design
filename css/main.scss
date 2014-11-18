@@ -391,8 +391,6 @@ body {
 .project-image {
     @include transition-duration(400ms);
     
-//    cursor: pointer;
-    
     &.active {
         position: absolute;
         height: 100vh !important;
