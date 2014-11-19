@@ -194,6 +194,22 @@ body {
       background: url(../assets/projects/2nectar/5.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    .project-container .project-splash.project-splash-yurbuds {
+      background: url(../assets/projects/3yurbuds/yurbuds-splash.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
+    .project-container .project-splash.project-splash-lineart {
+      background: url(../assets/projects/5lineart/lineart-14.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
+    .project-container .project-splash.project-splash-planb {
+      background: url(../assets/projects/7planb/Hong_YooJin_PlanB_138.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
+    .project-container .project-splash.project-splash-redrobin {
+      background: url(../assets/projects/8redrobin/1-14.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
     .project-container .project-splash h2 {
       text-transform: uppercase;
       font-weight: 200;
@@ -204,18 +220,18 @@ body {
       top: 24px;
       right: 20px; }
       .project-container .project-splash h2::after {
-        content: "Click for more info";
+        content: "Click anywhere for more info";
         position: absolute;
         margin: auto;
         right: 4px;
         top: 26px;
-        width: 106px;
+        width: 200px;
         height: 14px;
         text-align: right;
         text-transform: lowercase;
         font-size: 12px;
         font-weight: 300;
-        letter-spacing: 0; }
+        letter-spacing: 1px; }
   .project-container video {
     height: 100%;
     width: 100%;

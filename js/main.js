@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // list of project titles to display in nav bar
-    var titles = ["Welcome", "Primitive Magazine", "Nectar"];
+    var titles = ["Welcome", "Primitive Magazine", "Nectar", "Yurbuds", "Ninth Letter", "Line Art", "Le Cafe", "Plan B", "Robin Red Breast", "Advertising", "SCUDO Gives", "Interactive Vinyl"];
     var titleHide = 1140, navHide = 730;
     var titleHidden = false, navHidden = false;
 
