@@ -210,6 +210,10 @@ body {
       background: url(../assets/projects/8redrobin/1-14.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    .project-container .project-splash.project-splash-vinyl {
+      background: url(../assets/projects/11interactivevinyl/interactive-poster-10.png) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
     .project-container .project-splash h2 {
       text-transform: uppercase;
       font-weight: 200;
