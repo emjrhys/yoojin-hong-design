@@ -63,6 +63,17 @@ $(document).ready(function() {
         $(this).fadeOut(300); 
     });
     
+    $(".play-button").click(function() {
+        var id = $(this).attr('id');
+        id = id.substring(0, id.indexOf('button')) + 'video';
+        
+        var vid = document.getElementById(id);
+        vid.play();
+        
+        $(this).fadeOut(300);
+        vid.setAttribute("controls","controls");
+    });
+    
 //    $(".project-image").click(function() {
 //        $(this).toggleClass("active");
 //    });
