@@ -259,6 +259,16 @@ body {
             background-color: white;
         }
         
+        &.project-splash-ninthletter {
+            background: url(../assets/projects/4ninthletter/NinthStack.jpg) no-repeat center center;
+            background-size: cover;
+            background-color: white;
+            
+            h2 {
+                color: white;
+            }
+        }
+        
         &.project-splash-lineart {
             background: url(../assets/projects/5lineart/lineart-14.png) no-repeat center center;
             background-size: cover;

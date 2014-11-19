@@ -199,6 +199,12 @@ body {
       background: url(../assets/projects/3yurbuds/yurbuds-splash.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    .project-container .project-splash.project-splash-ninthletter {
+      background: url(../assets/projects/4ninthletter/NinthStack.jpg) no-repeat center center;
+      background-size: cover;
+      background-color: white; }
+      .project-container .project-splash.project-splash-ninthletter h2 {
+        color: white; }
     .project-container .project-splash.project-splash-lineart {
       background: url(../assets/projects/5lineart/lineart-14.png) no-repeat center center;
       background-size: cover;
