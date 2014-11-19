@@ -206,6 +206,7 @@ body {
         display: inline-block;
         margin: auto;
         left: 0; right: 0;
+        //right: 26px;
         bottom: 0;
         
         &::before, &::after {
@@ -339,8 +340,37 @@ body {
                 font-weight: 300;
                 
                 letter-spacing: 1px;
+                
+                display: none;
             }
-        }        
+        }    
+        
+        button {
+            position: absolute;
+            
+            background-color: black;
+            width: 140px;
+            height: 32px;
+            
+            //margin: 0 auto;
+            //left: 0; right: 0; bottom: 50px;
+            top: 54px;
+            right: 24px;
+            
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            //border-top-right-radius: 5px;
+
+            
+            color: white;
+            line-height: 32px;
+            letter-spacing: 1px;
+            text: { transform: lowercase; }
+            font: { size: 12px; weight: 100 !important; }
+            
+            cursor: pointer;
+        }
     }
     
     video {

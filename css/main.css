@@ -249,7 +249,25 @@ body {
         text-transform: lowercase;
         font-size: 12px;
         font-weight: 300;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        display: none; }
+    .project-container .project-splash button {
+      position: absolute;
+      background-color: black;
+      width: 140px;
+      height: 32px;
+      top: 54px;
+      right: 24px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      color: white;
+      line-height: 32px;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+      font-size: 12px;
+      font-weight: 100 !important;
+      cursor: pointer; }
   .project-container video {
     height: 100%;
     width: 100%;
