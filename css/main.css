@@ -1,3 +1,4 @@
+/* line 8, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -6,12 +7,14 @@
   -ms-user-select: none;
   user-select: none; }
 
+/* line 17, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 * {
   padding: 0;
   margin: 0;
   font-weight: inherit;
   font-size: inherit; }
 
+/* line 24, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 body {
   font-family: 'Raleway', sans-serif;
   background-color: black;
@@ -19,6 +22,7 @@ body {
   height: 100vh;
   width: 100vw; }
 
+/* line 33, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .slides-navigation a {
   cursor: pointer;
   text-indent: -9999px;
@@ -32,9 +36,11 @@ body {
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms; }
+  /* line 46, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .slides-navigation a:hover {
     background: url(../assets/navigation/arrow-light.png);
     background-size: 40px 40px; }
+  /* line 51, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .slides-navigation a.prev {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -43,18 +49,21 @@ body {
     filter: FlipH;
     -ms-filter: "FlipH"; }
 
+/* line 62, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .slides-pagination {
   position: fixed;
   z-index: 21;
   bottom: 16px;
   right: 38px;
   width: 430px; }
+  /* line 71, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .slides-pagination a {
     background-color: white;
     border: none;
     width: 12px;
     height: 12px;
     margin-left: 20px; }
+    /* line 78, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .slides-pagination a.current {
       border: none;
       border-radius: 0px;
@@ -63,23 +72,26 @@ body {
       width: 12px;
       height: 12px; }
 
+/* line 90, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 #splash-video {
   display: block;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0); }
 
+/* line 97, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .splash-content {
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0; }
+  /* line 106, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .splash-content .splash-title {
     width: 260px;
     height: 180px;
@@ -99,12 +111,15 @@ body {
     -o-transition-duration: 300ms;
     -webkit-transition-duration: 300ms;
     transition-duration: 300ms; }
+    /* line 124, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .splash-content .splash-title h2 {
       font-size: 24px;
       font-weight: 200; }
+    /* line 129, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .splash-content .splash-title h3 {
       margin-top: 10px;
       letter-spacing: 5px; }
+    /* line 134, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .splash-content .splash-title::before, .splash-content .splash-title::after {
       display: block;
       content: "";
@@ -112,6 +127,7 @@ body {
       height: 1px;
       width: 60px;
       margin: 28px auto; }
+  /* line 144, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .splash-content .splash-about {
     opacity: 0;
     -moz-transition-duration: 300ms;
@@ -130,13 +146,17 @@ body {
     font-size: 14px;
     text-align: center;
     letter-spacing: 1px; }
+  /* line 161, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .splash-content.about-active {
     background-color: rgba(0, 0, 0, 0.5); }
+    /* line 164, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .splash-content.about-active .splash-title {
       opacity: 0; }
+    /* line 168, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .splash-content.about-active .splash-about {
       opacity: 1; }
 
+/* line 174, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .project-nav {
   height: 50px;
   width: 100%;
@@ -150,10 +170,12 @@ body {
   font-weight: 100;
   font-size: 13px;
   letter-spacing: 2px; }
+  /* line 195, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-nav a {
     text-decoration: none;
     color: inherit;
     margin-left: 60px; }
+  /* line 202, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-nav p {
     position: absolute;
     width: 240px;
@@ -163,6 +185,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0; }
+    /* line 212, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-nav p::before, .project-nav p::after {
       content: "";
       display: block;
@@ -171,14 +194,17 @@ body {
       height: 20px;
       background-color: white;
       margin-top: 14px; }
+    /* line 223, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-nav p::after {
       margin-top: -36px;
       margin-left: 238px; }
 
+/* line 230, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .project-container {
   height: calc(100vh - 50px);
   width: 100%;
   background-color: white; }
+  /* line 235, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container .project-splash {
     position: absolute;
     top: 0;
@@ -188,46 +214,58 @@ body {
     background-color: white;
     cursor: pointer;
     z-index: 40; }
+    /* line 246, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-primitive {
       background: url(../assets/projects/1primitive/primitive-splash.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 252, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-nectar {
       background: url(../assets/projects/2nectar/5.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 258, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-yurbuds {
       background: url(../assets/projects/3yurbuds/yurbuds-splash.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 264, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-ninthletter {
       background: url(../assets/projects/4ninthletter/NinthStack.jpg) no-repeat center center;
       background-size: cover;
       background-color: white; }
+      /* line 269, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container .project-splash.project-splash-ninthletter h2 {
         color: white; }
+    /* line 274, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-lineart {
       background: url(../assets/projects/5lineart/lineart-14.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 280, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-planb {
       background: url(../assets/projects/7planb/Hong_YooJin_PlanB_138.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 286, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-redrobin {
       background: url(../assets/projects/8redrobin/1-14.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 292, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-scudo {
       background: url(../assets/projects/10scudogives/Gives.jpg) no-repeat center center;
       background-size: cover;
       background-color: white; }
+      /* line 297, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container .project-splash.project-splash-scudo h2 {
         color: white; }
+    /* line 302, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash.project-splash-vinyl {
       background: url(../assets/projects/11interactivevinyl/interactive-poster-10.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
+    /* line 308, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash h2 {
       text-transform: uppercase;
       font-weight: 200;
@@ -237,21 +275,28 @@ body {
       position: absolute;
       top: 24px;
       right: 20px; }
+      /* line 324, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container .project-splash h2::after {
-        content: "Click anywhere for more info";
         position: absolute;
-        margin: auto;
-        right: 4px;
-        top: 26px;
-        width: 200px;
-        height: 14px;
-        text-align: right;
+        content: "Click for more info";
+        background-color: black;
+        width: 140px;
+        height: 32px;
+        top: 34px;
+        right: 2px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+        line-height: 32px;
+        letter-spacing: 1px;
+        text-align: center;
         text-transform: lowercase;
         font-size: 12px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        display: none; }
+        font-weight: 100 !important; }
+    /* line 349, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-splash button {
+      display: none;
       position: absolute;
       background-color: black;
       width: 140px;
@@ -268,10 +313,12 @@ body {
       font-size: 12px;
       font-weight: 100 !important;
       cursor: pointer; }
+  /* line 378, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container video {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  /* line 384, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container .play-button {
     position: relative;
     top: -50%;
@@ -292,9 +339,11 @@ body {
     color: white;
     cursor: pointer;
     z-index: 1; }
+    /* line 409, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .play-button span {
       display: block;
       margin-top: 2px; }
+    /* line 414, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .play-button span::before {
       content: "";
       display: block;
@@ -303,67 +352,83 @@ body {
       width: 40px;
       height: 26px;
       margin: 0 auto 6px; }
+    /* line 426, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .play-button:hover {
       background-color: rgba(0, 0, 0, 0.2); }
+  /* line 432, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container.primitive-container .left, .project-container.primitive-container .right {
     height: 100%; }
+  /* line 436, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container.primitive-container .left {
     float: left;
     width: calc(100% - 600px);
     left: 0; }
+    /* line 441, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container.primitive-container .left .top {
       height: 30%; }
+      /* line 444, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .left .top .top-photo-1 {
         float: left;
         height: 100%;
         width: 45%;
         background: url(../assets/projects/1primitive/6.jpg) no-repeat center center;
         background-size: cover; }
+      /* line 452, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .left .top .top-right {
         width: 30%;
         height: 100%;
         float: right; }
+        /* line 456, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
         .project-container.primitive-container .left .top .top-right .top-photo-2 {
           height: 50%;
           width: 100%;
           background: url(../assets/projects/1primitive/8.jpg) no-repeat center center;
           background-size: cover; }
+        /* line 463, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
         .project-container.primitive-container .left .top .top-right .top-photo-3 {
           height: 50%;
           width: 100%;
           background: url(../assets/projects/1primitive/5.jpg) no-repeat center center;
           background-size: cover; }
+    /* line 471, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container.primitive-container .left .bottom {
       background-color: white;
       height: 70%;
       width: 100%;
       overflow: hidden; }
+  /* line 479, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container.primitive-container .right {
     float: left;
     width: 600px; }
+    /* line 483, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container.primitive-container .right .top {
       height: calc(100% - 206px);
       width: 100%;
       overflow: hidden; }
+      /* line 488, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .right .top div {
         height: 100%; }
+    /* line 493, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container.primitive-container .right .bottom {
       border: 8px solid black;
       margin-left: 14px;
       margin-top: 12px;
       width: calc(100% - 95px);
       padding: 14px 26px; }
+      /* line 501, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .right .bottom h3 {
         font-weight: 600;
         font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-bottom: 8px; }
+      /* line 511, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .right .bottom h4 {
         font-weight: 600;
         font-size: 14px;
         margin-bottom: 8px;
         letter-spacing: 1px; }
+      /* line 520, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container.primitive-container .right .bottom p {
         font-size: 14px;
         -webkit-column-count: 2;
@@ -376,15 +441,18 @@ body {
         -moz-column-gap: 42px;
         /* Firefox */
         column-gap: 42px; }
+  /* line 534, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-container.primitive-container .nectar-content {
     width: 100%;
     height: 100%; }
 
+/* line 541, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .project-image {
   -moz-transition-duration: 400ms;
   -o-transition-duration: 400ms;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms; }
+  /* line 544, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-image.active {
     position: absolute;
     height: 100vh !important;

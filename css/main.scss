@@ -322,30 +322,32 @@ body {
             right: 20px;
             
             &::after {
-                content: "Click anywhere for more info";
                 position: absolute;
-                margin: auto;
-                right: 4px;
-                top: 26px;
+                content: "Click for more info";
+            
+                background-color: black;
+                width: 140px;
+                height: 32px;
 
-                width: 200px;
-                height: 14px;
+                top: 34px;
+                right: 2px;
+
+                border: none;
+                outline: none;
+                border-radius: 5px;
 
 
-                text: {
-                    align: right;
-                    transform: lowercase;
-                }
-                font-size: 12px;
-                font-weight: 300;
-                
+                color: white;
+                line-height: 32px;
                 letter-spacing: 1px;
-                
-                display: none;
+                text-align: center;
+                text: { transform: lowercase; }
+                font: { size: 12px; weight: 100 !important; }
             }
         }    
         
         button {
+            display: none;
             position: absolute;
             
             background-color: black;
