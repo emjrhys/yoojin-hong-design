@@ -27,6 +27,7 @@ body {
   height: 40px;
   width: 40px;
   margin: 0 30px;
+  text-indent: -9999px;
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
   -webkit-transition-duration: 300ms;
