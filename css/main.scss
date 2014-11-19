@@ -242,7 +242,8 @@ body {
         z-index: 40;
 
         &.project-splash-primitive {
-            background: url(../assets/projects/1primitive/mobile_splash-07.png) no-repeat center center;
+            background: url(../assets/projects/1primitive/primitive-splash.png) no-repeat center center;
+            background-size: cover;
             background-color: white;
         }
         

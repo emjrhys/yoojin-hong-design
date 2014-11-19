@@ -188,7 +188,8 @@ body {
     cursor: pointer;
     z-index: 40; }
     .project-container .project-splash.project-splash-primitive {
-      background: url(../assets/projects/1primitive/mobile_splash-07.png) no-repeat center center;
+      background: url(../assets/projects/1primitive/primitive-splash.png) no-repeat center center;
+      background-size: cover;
       background-color: white; }
     .project-container .project-splash.project-splash-nectar {
       background: url(../assets/projects/2nectar/5.png) no-repeat center center;
