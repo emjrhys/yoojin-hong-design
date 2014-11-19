@@ -238,14 +238,15 @@ body {
         background-color: white;
 
         cursor: pointer;
+        z-index: 40;
 
         &.project-splash-primitive {
-            background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+            background: url(../assets/projects/1primitive/mobile_splash-07.png) no-repeat center center;
             background-color: white;
         }
         
         &.project-splash-nectar {
-            background: url(../assets/projects/nectar/5.png) no-repeat center center;
+            background: url(../assets/projects/2nectar/5.png) no-repeat center center;
             background-size: cover;
             background-color: white;
         }
@@ -289,6 +290,54 @@ body {
         }        
     }
     
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .play-button {
+        position: relative;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid white;
+        outline: none;
+        background-color: rgba(0, 0, 0, .5);
+        
+        @include transition-duration(150ms);
+        
+        font: {
+            size: 10px;
+            weight: 100;
+        }
+        color: white;
+        
+        cursor: pointer;
+        
+        z-index: 1;
+        
+        span {
+            display: block;
+            margin-top: 2px;
+        }
+        
+        span::before {
+            content: "";
+            background: url(../assets/navigation/play-arrow.png) no-repeat center center;
+            width: 50px;
+            height: 30px;
+        }
+        
+        &:hover {
+            background-color: rgba(0, 0, 0, .2);
+        }
+    }
+    
     &.primitive-container {
         .left, .right {
             height: 100%;
@@ -306,7 +355,7 @@ body {
                     float: left;
                     height: 100%;
                     width: 45%;
-                    background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
+                    background: url(../assets/projects/1primitive/6.jpg) no-repeat center center;
                     background-size: cover;
                 }
 
@@ -317,33 +366,44 @@ body {
                     .top-photo-2 {
                         height: 50%;
                         width: 100%;
-                        background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
+                        background: url(../assets/projects/1primitive/8.jpg) no-repeat center center;
                         background-size: cover;
                     }
 
                     .top-photo-3 {
                         height: 50%;
                         width: 100%;
-                        background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
+                        background: url(../assets/projects/1primitive/5.jpg) no-repeat center center;
                         background-size: cover;
                     }
                 }
             }
             .bottom {
-                background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
-                background-size: cover;
+                background-color: white;
                 height: 70%;
+                width: 100%;
+                overflow: hidden;
             }
         }
 
         .right {
             float: left;
             width: 600px;
+            
+            .top { 
+                height: calc(100% - 206px);
+                width: 100%;
+                overflow: hidden;
+                
+                div {
+                    height: 100%;
+                }
+            }
 
-            div {
+            .bottom {
                 border: 8px solid black;
                 margin-left: 14px;
-                margin-top: 14px;
+                margin-top: 12px;
                 width: calc(100% - 95px);
 
                 padding: 14px 26px;

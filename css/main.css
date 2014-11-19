@@ -185,12 +185,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 40; }
     .project-container .project-splash.project-splash-primitive {
-      background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
+      background: url(../assets/projects/1primitive/mobile_splash-07.png) no-repeat center center;
       background-color: white; }
     .project-container .project-splash.project-splash-nectar {
-      background: url(../assets/projects/nectar/5.png) no-repeat center center;
+      background: url(../assets/projects/2nectar/5.png) no-repeat center center;
       background-size: cover;
       background-color: white; }
     .project-container .project-splash h2 {
@@ -215,6 +216,40 @@ body {
         font-size: 12px;
         font-weight: 300;
         letter-spacing: 0; }
+  .project-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .project-container .play-button {
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    -moz-transition-duration: 150ms;
+    -o-transition-duration: 150ms;
+    -webkit-transition-duration: 150ms;
+    transition-duration: 150ms;
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+    z-index: 1; }
+    .project-container .play-button span {
+      display: block;
+      margin-top: 2px; }
+    .project-container .play-button span::before {
+      content: "";
+      background: url(../assets/navigation/play-arrow.png) no-repeat center center;
+      width: 50px;
+      height: 30px; }
+    .project-container .play-button:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
   .project-container.primitive-container .left, .project-container.primitive-container .right {
     height: 100%; }
   .project-container.primitive-container .left {
@@ -227,7 +262,7 @@ body {
         float: left;
         height: 100%;
         width: 45%;
-        background: url(../assets/projects/primitive/6.jpg) no-repeat center center;
+        background: url(../assets/projects/1primitive/6.jpg) no-repeat center center;
         background-size: cover; }
       .project-container.primitive-container .left .top .top-right {
         width: 30%;
@@ -236,38 +271,45 @@ body {
         .project-container.primitive-container .left .top .top-right .top-photo-2 {
           height: 50%;
           width: 100%;
-          background: url(../assets/projects/primitive/8.jpg) no-repeat center center;
+          background: url(../assets/projects/1primitive/8.jpg) no-repeat center center;
           background-size: cover; }
         .project-container.primitive-container .left .top .top-right .top-photo-3 {
           height: 50%;
           width: 100%;
-          background: url(../assets/projects/primitive/5.jpg) no-repeat center center;
+          background: url(../assets/projects/1primitive/5.jpg) no-repeat center center;
           background-size: cover; }
     .project-container.primitive-container .left .bottom {
-      background: url(../assets/projects/primitive/mobile_splash-07.png) no-repeat center center;
-      background-size: cover;
-      height: 70%; }
+      background-color: white;
+      height: 70%;
+      width: 100%;
+      overflow: hidden; }
   .project-container.primitive-container .right {
     float: left;
     width: 600px; }
-    .project-container.primitive-container .right div {
+    .project-container.primitive-container .right .top {
+      height: calc(100% - 206px);
+      width: 100%;
+      overflow: hidden; }
+      .project-container.primitive-container .right .top div {
+        height: 100%; }
+    .project-container.primitive-container .right .bottom {
       border: 8px solid black;
       margin-left: 14px;
-      margin-top: 14px;
+      margin-top: 12px;
       width: calc(100% - 95px);
       padding: 14px 26px; }
-      .project-container.primitive-container .right div h3 {
+      .project-container.primitive-container .right .bottom h3 {
         font-weight: 600;
         font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-bottom: 8px; }
-      .project-container.primitive-container .right div h4 {
+      .project-container.primitive-container .right .bottom h4 {
         font-weight: 600;
         font-size: 14px;
         margin-bottom: 8px;
         letter-spacing: 1px; }
-      .project-container.primitive-container .right div p {
+      .project-container.primitive-container .right .bottom p {
         font-size: 14px;
         -webkit-column-count: 2;
         /* Chrome, Safari, Opera */
