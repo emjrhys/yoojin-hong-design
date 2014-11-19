@@ -1,6 +1,8 @@
 $(document).ready(function() {
     // list of project titles to display in nav bar
     var titles = ["Welcome", "Primitive Magazine", "Nectar"];
+    var titleHide = 1140, navHide = 730;
+    var titleHidden = false, navHidden = false;
 
     // init portfolio carousel
     $('#slides').superslides({
@@ -20,6 +22,22 @@ $(document).ready(function() {
                 width: "100%",
                 height: "auto"
             });
+        }
+        
+        if (!titleHidden && $(this).width() < titleHide) {
+            $('#current-page-title').css('display', 'none');
+            titleHidden = true;
+        } else if (titleHidden && $(this).width() >= titleHide) {
+            $('#current-page-title').css('display', 'inline-block');
+            titleHidden = false;
+        }
+        
+        if (!navHidden && $(this).width() < navHide) {
+            $('.slides-pagination').css('display', 'none');
+            navHidden = true;
+        } else if (navHidden && $(this).width() >= navHide) {
+            $('.slides-pagination').css('display', 'inline-block');
+            navHidden = false;
         }
     }
 
@@ -73,10 +91,6 @@ $(document).ready(function() {
         $(this).fadeOut(300);
         vid.setAttribute("controls","controls");
     });
-    
-//    $(".project-image").click(function() {
-//        $(this).toggleClass("active");
-//    });
     
     // execute functions on page load
     updatePage();
