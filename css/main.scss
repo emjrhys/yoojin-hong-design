@@ -387,49 +387,20 @@ body {
     
     .play-button {
         position: relative;
-        top: -50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+        top: 58px;
+        left: calc(100% - 40px);
         
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 2px solid white;
+        width: 40px;
+        height: 40px;
+        border: none;
         outline: none;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: black;
         
         @include transition-duration(150ms);
-        
-        font: {
-            size: 10px;
-            weight: 100;
-        }
-        color: white;
         
         cursor: pointer;
         
         z-index: 1;
-        
-        span {
-            display: block;
-            margin-top: 2px;
-        }
-        
-        span::before {
-            content: "";
-            display: block;
-            background: url(../assets/navigation/play-arrow.png) no-repeat center center;
-            background-size: 40px 26px;
-            
-            width: 40px;
-            height: 26px;
-            
-            margin: 0 auto 6px;
-        }
-        
-        &:hover {
-            background-color: rgba(0, 0, 0, .2);
-        }
     }
     
     .project-content {
@@ -475,7 +446,7 @@ body {
         
         .project-gallery {
             img {
-                @include col(1/4);
+                @include span(1/4);
                 margin-bottom: 10px;
             }
         }
@@ -486,7 +457,7 @@ body {
                 margin: 14px auto;
             }
             
-            div {
+            video {
                 margin: 14px auto;
             }
         }
