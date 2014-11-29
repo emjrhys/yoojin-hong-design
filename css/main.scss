@@ -1,3 +1,5 @@
+@import '../jeet/index';
+
 @mixin transition-duration($duration...) {
     -moz-transition-duration:    $duration;
     -o-transition-duration:      $duration;
@@ -63,10 +65,11 @@ body {
     position: fixed;
     z-index: 21;
     
-    bottom: 16px;
+    top: 14px;
     right: 38px;
     
     width: 430px;
+    height: 36px;
     
     a {
         background-color: white;
@@ -176,7 +179,7 @@ body {
     width: 100%;
     background-color: black;
     position: fixed;
-    bottom: 0;
+    top: 0;
     
     line-height: 50px;
     z-index: 20;
@@ -200,10 +203,12 @@ body {
     }
     
     p {
+        display: none;
+        
         position: absolute;
         width: 240px;
         text-align: center;
-        display: inline-block;
+//        display: inline-block;
         margin: auto;
         left: 0; right: 0;
         //right: 26px;
@@ -230,14 +235,16 @@ body {
 .project-container {
     height: calc(100vh - 50px);
     width: 100%;
+    margin-top: 50px;
     background-color: white;
+    overflow: scroll;
     
     .project-splash {
         position: absolute;
-        top: 0;
+        top: 50px;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: calc(100vh - 50px);
         background-color: white;
 
         cursor: pointer;
@@ -354,15 +361,12 @@ body {
             width: 140px;
             height: 32px;
             
-            //margin: 0 auto;
-            //left: 0; right: 0; bottom: 50px;
             top: 54px;
             right: 24px;
             
             border: none;
             outline: none;
             border-radius: 5px;
-            //border-top-right-radius: 5px;
 
             
             color: white;
@@ -376,7 +380,7 @@ body {
     }
     
     video {
-        height: 100%;
+//        height: auto;
         width: 100%;
         object-fit: cover;
     }
@@ -385,7 +389,7 @@ body {
         position: relative;
         top: -50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 50%);
         
         width: 120px;
         height: 120px;
@@ -428,112 +432,63 @@ body {
         }
     }
     
-    &.primitive-container {
-        .left, .right {
-            height: 100%;
+    .project-content {
+        @include center(800px);
+        
+        section {
+            margin: 40px auto;
         }
-
-        .left {
-            float: left;
-            width: calc(100% - 600px);
-            left: 0;
-
-            .top {
-                height: 30%;
-
-                .top-photo-1 {
-                    float: left;
-                    height: 100%;
-                    width: 45%;
-                    background: url(../assets/projects/1primitive/6.jpg) no-repeat center center;
-                    background-size: cover;
-                }
-
-                .top-right {
-                    width: 30%;
-                    height: 100%;
-                    float: right;
-                    .top-photo-2 {
-                        height: 50%;
-                        width: 100%;
-                        background: url(../assets/projects/1primitive/8.jpg) no-repeat center center;
-                        background-size: cover;
-                    }
-
-                    .top-photo-3 {
-                        height: 50%;
-                        width: 100%;
-                        background: url(../assets/projects/1primitive/5.jpg) no-repeat center center;
-                        background-size: cover;
-                    }
-                }
-            }
-            .bottom {
-                background-color: white;
-                height: 70%;
-                width: 100%;
-                overflow: hidden;
-            }
-        }
-
-        .right {
-            float: left;
-            width: 600px;
+        
+        .project-header {
+            text-align: center;
             
-            .top { 
-                height: calc(100% - 206px);
-                width: 100%;
-                overflow: hidden;
-                
-                div {
-                    height: 100%;
-                }
+            h2 {
+                text: { transform: uppercase; }
+                font: { size: 34px; }
+                letter-spacing: 8px;
             }
-
-            .bottom {
-                border: 8px solid black;
-                margin-left: 14px;
-                margin-top: 12px;
-                width: calc(100% - 95px);
-
-                padding: 14px 26px;
-
-                h3 {
-                    font: {
-                        weight: 600;
-                        size: 20px;
-                    }
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                    margin-bottom: 8px;
-                }
-
-                h4 {
-                    font: {
-                        weight: 600;
-                        size: 14px;
-                    }
-                    margin-bottom: 8px;
-                    letter-spacing: 1px;
-                }
-
-                p {
-
-                    font-size: 14px;
-
-                    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-                    -moz-column-count: 2; /* Firefox */
-                    column-count: 2;
-                    -webkit-column-gap: 42px; /* Chrome, Safari, Opera */
-                    -moz-column-gap: 42px; /* Firefox */
-                    column-gap: 42px;
-                }
+            
+            h3 {
+                margin: 14px auto;
+                font: { family: 'Old Standard TT'; style: italic; size: 14px; }
+            }
+            
+            button {
+                display: inline-block;
+                background-color: black;
+                color: white;
+                
+                width: 100px;
+                height: 28px;
+                
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                
+                text: { transform: uppercase; }
+                font: { size: 10px; weight: 100; }
+                letter-spacing: 2px;
+                
+                cursor: pointer;
             }
         }
         
-        .nectar-content {
-            width: 100%;
-            height: 100%;
+        .project-gallery {
+            img {
+                @include col(1/4);
+                margin-bottom: 10px;
+            }
+        }
+        
+        .project-info {
+            p {
+                font: { family: 'Old Standard TT'; size: 14px; }
+                margin: 14px auto;
+            }
+            
+            div {
+                margin: 14px auto;
+            }
         }
     }
 }
