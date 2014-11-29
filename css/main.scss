@@ -87,6 +87,15 @@ body {
             width: 12px;
             height: 12px;
         }
+        
+        &::after {
+            content: "";
+            top: -2px;
+            left: -2px;
+            padding: 2px;
+            box-shadow: 0 0 0 4px #fff;
+            opacity: 1;
+        }
     }
 }
 
@@ -387,7 +396,7 @@ body {
     
     .play-button {
         position: relative;
-        top: 58px;
+        top: 44px;
         left: calc(100% - 40px);
         
         width: 40px;
@@ -445,10 +454,10 @@ body {
         }
         
         .project-gallery {
-            img {
+            /*img {
                 @include span(1/4);
                 margin-bottom: 10px;
-            }
+            }*/
         }
         
         .project-info {
@@ -457,7 +466,7 @@ body {
                 margin: 14px auto;
             }
             
-            video {
+            div {
                 margin: 14px auto;
             }
         }
