@@ -526,27 +526,6 @@ body {
         font-weight: 100;
         letter-spacing: 2px;
         cursor: pointer; }
-    /* line 455, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
-    .project-container .project-content .project-gallery li {
-      display: block;
-      *zoom: 1;
-      float: left;
-      clear: none;
-      text-align: inherit;
-      width: 25%;
-      margin-left: 0%;
-      margin-right: 0%;
-      margin-bottom: 10px; }
-      /* line 344, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
-      .project-container .project-content .project-gallery li:before, .project-container .project-content .project-gallery li:after {
-        content: '';
-        display: table; }
-      /* line 349, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
-      .project-container .project-content .project-gallery li:after {
-        clear: both; }
-      /* line 460, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
-      .project-container .project-content .project-gallery li img {
-        width: 100%; }
     /* line 467, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info p {
       font-family: 'Old Standard TT';

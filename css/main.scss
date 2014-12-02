@@ -452,15 +452,15 @@ body {
         }
         
         .project-gallery {
-            li {
-                display: block;
-                @include span(1/4);
-                margin-bottom: 10px;
-                
-                img {
-                    width: 100%;
-                }
-            }
+//            li {
+//                display: block;
+//                @include span(1/4);
+//                margin-bottom: 10px;
+//                
+//                img {
+//                    width: 100%;
+//                }
+//            }
         }
         
         .project-info {
