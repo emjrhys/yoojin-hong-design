@@ -352,7 +352,6 @@ body {
                 outline: none;
                 border-radius: 5px;
 
-
                 color: white;
                 line-height: 32px;
                 letter-spacing: 1px;
@@ -452,6 +451,13 @@ body {
         }
         
         .project-gallery {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
 //            li {
 //                display: block;
 //                @include span(1/4);

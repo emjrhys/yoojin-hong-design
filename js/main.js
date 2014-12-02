@@ -92,7 +92,10 @@ $(document).ready(function() {
         vid.setAttribute("controls", "controls");
     });
     
-    $('#gallery-slider').lightSlider();
+    $('#gallery-slider').lightSlider({
+        item: 1,
+        loop: true
+    });
     
     // execute functions on page load
     updatePage();
