@@ -89,8 +89,10 @@ $(document).ready(function() {
         vid.play();
         
         $(this).fadeOut(300);
-        vid.setAttribute("controls","controls");
+        vid.setAttribute("controls", "controls");
     });
+    
+    $('#gallery-slider').lightSlider();
     
     // execute functions on page load
     updatePage();

@@ -1,6 +1,6 @@
 @import '../jeet/index';
 
-@mixin transition-duration($duration...) {
+@mixin transition-duration($duration) {
     -moz-transition-duration:    $duration;
     -o-transition-duration:      $duration;
     -webkit-transition-duration: $duration;
@@ -389,9 +389,7 @@ body {
     }
     
     video {
-//        height: auto;
         width: 100%;
-        object-fit: cover;
     }
     
     .play-button {
@@ -429,7 +427,7 @@ body {
             }
             
             h3 {
-                margin: 14px auto;
+                margin: 14px auto 20px;
                 font: { family: 'Old Standard TT'; style: italic; size: 14px; }
             }
             
@@ -454,10 +452,15 @@ body {
         }
         
         .project-gallery {
-            /*img {
+            li {
+                display: block;
                 @include span(1/4);
                 margin-bottom: 10px;
-            }*/
+                
+                img {
+                    width: 100%;
+                }
+            }
         }
         
         .project-info {
@@ -469,6 +472,15 @@ body {
             div {
                 margin: 14px auto;
             }
+        }
+        
+        .top-button {
+            display: block;
+            background-color: black;
+            width: 100%;
+            height: 100px;
+            
+            text: { align: center; }
         }
     }
 }
