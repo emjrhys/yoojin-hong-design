@@ -545,7 +545,7 @@ body {
           .project-container .project-content .project-gallery .gallery-slide li img {
             display: block;
             height: auto;
-            max-width: 100%; }
+            max-width: 800px; }
     /* line 488, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info p {
       font-family: 'Old Standard TT';
