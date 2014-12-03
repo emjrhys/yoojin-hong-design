@@ -470,7 +470,7 @@ body {
     border: none;
     outline: none;
     background-color: black;
-    background-image: url(/assets/navigation/video-arrow.png);
+    background-image: url(../assets/navigation/video-arrow.png);
     background-position: 8px center;
     background-repeat: no-repeat;
     background-size: 26px 26px;
@@ -533,25 +533,24 @@ body {
     /* line 457, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-gallery {
       width: 100%;
-      height: 500px;
       margin-bottom: 20px; }
-      /* line 463, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+      /* line 462, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
       .project-container .project-content .project-gallery #gallery-slider li {
         display: block; }
-        /* line 466, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        /* line 465, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
         .project-container .project-content .project-gallery #gallery-slider li img {
           display: block;
           height: auto;
           width: 800px; }
-    /* line 486, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+    /* line 485, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info p {
       font-family: 'Old Standard TT';
       font-size: 14px;
       margin: 14px auto; }
-    /* line 491, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+    /* line 490, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info div {
       margin: 14px auto; }
-    /* line 496, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+    /* line 495, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .top-button {
       display: block;
       background-color: black;
@@ -559,13 +558,13 @@ body {
       height: 100px;
       text-align: center; }
 
-/* line 507, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+/* line 506, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .project-image {
   -moz-transition-duration: 400ms;
   -o-transition-duration: 400ms;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms; }
-  /* line 510, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+  /* line 509, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-image.active {
     position: absolute;
     height: 100vh !important;
