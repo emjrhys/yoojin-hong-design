@@ -457,18 +457,16 @@ body {
         .project-gallery {
             width: 100%;
             height: 500px;
+            margin-bottom: 20px;
 
             #gallery-slider {
-//                width: 800px;
-//                height: 500px;
-                
                 li {
                     display: block;
                 
                     img {
                         display: block;
                         height: auto;
-                        max-width: 800px;
+                        width: 800px;
                     }
                 }
             }
