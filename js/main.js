@@ -3,6 +3,7 @@ $(document).ready(function() {
     var titles = ["Welcome", "Primitive Magazine", "Nectar", "Yurbuds", "Ninth Letter", "Line Art", "Le Cafe", "Plan B", "Robin Red Breast", "Advertising", "SCUDO Gives", "Interactive Vinyl"];
     var titleHide = 1140, navHide = 730;
     var titleHidden = false, navHidden = false;
+    
 
     // init portfolio carousel
     $('#slides').superslides({
@@ -80,8 +81,8 @@ $(document).ready(function() {
     $(".project-splash").click(function() {
         $(this).fadeOut(300); 
     });
-    
-    $(".play-button").click(function() {
+     
+    $(".play-button").click(function() { 
         var id = $(this).attr('id');
         id = id.substring(0, id.indexOf('button')) + 'video';
         
@@ -89,10 +90,16 @@ $(document).ready(function() {
         vid.play();
         
         $(this).fadeOut(300);
-        vid.setAttribute("controls", "controls");
+        vid.setAttribute("controls", "controls"); 
     });
     
-    $('#gallery-slider').lightSlider({
+    $('.swap-grid-button').click(function() {
+        $('.gallery-slider').slideToggle(300);
+        $('.gallery-grid').slideToggle(300);
+        $('.swap-grid-button').toggleClass('grid-text');
+    });
+    
+    $('#light-slider').lightSlider({
         item: 1,
         loop: true
     });

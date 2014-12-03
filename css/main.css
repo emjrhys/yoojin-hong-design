@@ -516,11 +516,12 @@ body {
         font-style: italic;
         font-size: 14px; }
       /* line 437, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
-      .project-container .project-content .project-header button {
+      .project-container .project-content .project-header .swap-grid-button {
         display: inline-block;
         background-color: black;
         color: white;
-        width: 100px;
+        text-align: center;
+        width: 130px;
         height: 28px;
         border: none;
         outline: none;
@@ -530,27 +531,75 @@ body {
         font-weight: 100;
         letter-spacing: 2px;
         cursor: pointer; }
-    /* line 457, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        /* line 456, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-header .swap-grid-button .grid, .project-container .project-content .project-header .swap-grid-button .slider {
+          display: inline-block;
+          text-align: left; }
+        /* line 461, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-header .swap-grid-button .grid {
+          display: none;
+          background: url(../assets/navigation/viewgrid-button.png) no-repeat right center;
+          background-size: 20px 20px;
+          width: 92px; }
+        /* line 469, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-header .swap-grid-button .slider {
+          background: url(../assets/navigation/viewslide-button.png) no-repeat right center;
+          background-size: 20px 20px;
+          width: 106px; }
+        /* line 476, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-header .swap-grid-button.grid-text .slider {
+          display: none; }
+        /* line 477, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-header .swap-grid-button.grid-text .grid {
+          display: inline-block; }
+    /* line 482, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-gallery {
       width: 100%;
       margin-bottom: 20px; }
-      /* line 462, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
-      .project-container .project-content .project-gallery #gallery-slider li {
-        display: block; }
-        /* line 465, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
-        .project-container .project-content .project-gallery #gallery-slider li img {
-          display: block;
-          height: auto;
-          width: 800px; }
-    /* line 485, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+      /* line 486, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+      .project-container .project-content .project-gallery .gallery-slider {
+        display: none; }
+        /* line 490, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+        .project-container .project-content .project-gallery .gallery-slider .gallery li {
+          display: block; }
+          /* line 493, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+          .project-container .project-content .project-gallery .gallery-slider .gallery li div {
+            height: 400px;
+            width: 800px;
+            background-color: red; }
+      /* line 503, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+      .project-container .project-content .project-gallery .gallery-grid img {
+        *zoom: 1;
+        float: left;
+        clear: none;
+        text-align: inherit;
+        width: 24.25%;
+        margin-left: 0%;
+        margin-right: 1%;
+        margin-bottom: 8px; }
+        /* line 344, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
+        .project-container .project-content .project-gallery .gallery-grid img:before, .project-container .project-content .project-gallery .gallery-grid img:after {
+          content: '';
+          display: table; }
+        /* line 349, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
+        .project-container .project-content .project-gallery .gallery-grid img:after {
+          clear: both; }
+        /* line 50, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
+        .project-container .project-content .project-gallery .gallery-grid img:nth-of-type(4n) {
+          margin-right: 0%;
+          float: right; }
+        /* line 54, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/jeet/_grid */
+        .project-container .project-content .project-gallery .gallery-grid img:nth-of-type(4n+1) {
+          clear: both; }
+    /* line 512, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info p {
       font-family: 'Old Standard TT';
       font-size: 14px;
       margin: 14px auto; }
-    /* line 490, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+    /* line 517, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .project-info div {
       margin: 14px auto; }
-    /* line 495, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+    /* line 522, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
     .project-container .project-content .top-button {
       display: block;
       background-color: black;
@@ -558,13 +607,13 @@ body {
       height: 100px;
       text-align: center; }
 
-/* line 506, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+/* line 533, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
 .project-image {
   -moz-transition-duration: 400ms;
   -o-transition-duration: 400ms;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms; }
-  /* line 509, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
+  /* line 536, /Users/noah/Dropbox/programming/projects/yoojinhongdesign/css/main.scss */
   .project-image.active {
     position: absolute;
     height: 100vh !important;

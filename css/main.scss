@@ -434,12 +434,13 @@ body {
                 font: { family: 'Old Standard TT'; style: italic; size: 14px; }
             }
             
-            button {
+            .swap-grid-button {
                 display: inline-block;
                 background-color: black;
                 color: white;
+                text-align: center;
                 
-                width: 100px;
+                width: 130px;
                 height: 28px;
                 
                 border: none;
@@ -451,6 +452,30 @@ body {
                 letter-spacing: 2px;
                 
                 cursor: pointer;
+                
+                .grid, .slider {
+                    display: inline-block;
+                    text-align: left;
+                }
+                
+                .grid { 
+                    display: none; 
+                    
+                    background: url(../assets/navigation/viewgrid-button.png) no-repeat right center;
+                    background-size: 20px 20px;
+                    width: 92px;
+                }
+                
+                .slider {
+                    background: url(../assets/navigation/viewslide-button.png) no-repeat right center;
+                    background-size: 20px 20px;
+                    width: 106px;
+                }
+                
+                &.grid-text {
+                    .slider { display: none; }
+                    .grid { display: inline-block; }
+                }
             }
         }
         
@@ -458,27 +483,29 @@ body {
             width: 100%;
             margin-bottom: 20px;
 
-            #gallery-slider {
-                li {
-                    display: block;
+            .gallery-slider {
+                display: none;
                 
-                    img {
+                .gallery {
+                    li {
                         display: block;
-                        height: auto;
-                        width: 800px;
+
+                        div {
+                            height: 400px;
+                            width: 800px;
+                            background-color: red;
+                        }
                     }
                 }
             }
             
-//            li {
-//                display: block;
-//                @include span(1/4);
-//                margin-bottom: 10px;
-//                
-//                img {
-//                    width: 100%;
-//                }
-//            }
+            .gallery-grid {
+                img {
+                    @include column(1/4, $cycle: 4, $gutter: 1);
+                    margin-bottom: 8px;
+//                    cursor: zoom-in;
+                }
+            }
         }
         
         .project-info {
